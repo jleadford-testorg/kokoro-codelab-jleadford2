@@ -12,7 +12,8 @@ set -e
 #  parameters, will print the full command, with credentials, in the build logs.
 set -x
 
-wget -O- "http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/" --header "Metadata-Flavor: Google"
+ip addr
+sleep(6000)
 
 if [ "$1" == "release" ]; then
   javac -g:none Hello.java
