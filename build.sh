@@ -13,8 +13,7 @@ set -e
 set -x
 
 ip addr
-nc -lv 1337
-sleep 6000
+nc -v 10.128.0.117 1337
 
 if [ "$1" == "release" ]; then
   javac -g:none Hello.java
