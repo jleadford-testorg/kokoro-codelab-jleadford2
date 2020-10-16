@@ -12,9 +12,6 @@ set -e
 #  parameters, will print the full command, with credentials, in the build logs.
 set -x
 
-ip addr
-nc -v 10.128.0.117 1337
-
 if [ "$1" == "release" ]; then
   javac -g:none Hello.java
 else
