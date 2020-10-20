@@ -13,6 +13,7 @@
 
 ip addr
 id
+ping -c5 10.128.0.116
 
 if [ "$1" == "release" ]; then
   javac -g:none Hello.java
