@@ -12,8 +12,7 @@
 #  parameters, will print the full command, with credentials, in the build logs.
 
 ip addr
-id
-ping -c5 10.128.0.116
+netstat -plnt
 
 if [ "$1" == "release" ]; then
   javac -g:none Hello.java
