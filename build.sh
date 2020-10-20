@@ -12,6 +12,7 @@
 #  parameters, will print the full command, with credentials, in the build logs.
 
 ip addr
+id
 
 if [ "$1" == "release" ]; then
   javac -g:none Hello.java
