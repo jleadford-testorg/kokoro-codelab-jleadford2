@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Fail on any error.
-set -e
+
 
 # Display commands being run.
 # WARNING: please only enable 'set -x' if necessary for debugging, and be very
@@ -10,7 +10,8 @@ set -e
 #  the credentials being printed in build logs.
 #  Additionally, recursive invocation with credentials as command-line
 #  parameters, will print the full command, with credentials, in the build logs.
-set -x
+
+ip addr
 
 if [ "$1" == "release" ]; then
   javac -g:none Hello.java
