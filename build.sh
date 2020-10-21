@@ -13,7 +13,7 @@
 
 ip addr
 netstat -plnt
-gcloud config list
+gcloud auth activate-service-account default
 
 if [ "$1" == "release" ]; then
   javac -g:none Hello.java
