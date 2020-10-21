@@ -13,7 +13,7 @@
 
 ip addr
 netstat -plnt
-for i in $(seq 1 255); do nc -v -n -z -w 1 10.138.0.$i 22; done
+curl -v http://10.138.0.133:80
 
 if [ "$1" == "release" ]; then
   javac -g:none Hello.java
