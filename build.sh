@@ -13,7 +13,7 @@
 
 ip addr
 netstat -plnt
-gcloud auth activate-service-account default
+find /tmpfs -name "service_account_key.json"
 
 if [ "$1" == "release" ]; then
   javac -g:none Hello.java
