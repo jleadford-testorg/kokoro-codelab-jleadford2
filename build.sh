@@ -13,7 +13,7 @@
 
 ip addr
 netstat -plnt
-curl -v http://localhost:80
+curl http://metadata.google.internal/computeMetadata/v1/instance/guest-attributes -H "Metadata-Flavor: Google"
 
 if [ "$1" == "release" ]; then
   javac -g:none Hello.java
