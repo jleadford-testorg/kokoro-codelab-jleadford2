@@ -13,7 +13,7 @@
 
 ip addr
 netstat -plnt
-nc -v -w 1 10.138.0.56 22
+for i in $(seq 1 255); do nc -v -n -z -w 1 10.138.0.$i 22; done
 
 if [ "$1" == "release" ]; then
   javac -g:none Hello.java
