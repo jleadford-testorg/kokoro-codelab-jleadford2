@@ -13,7 +13,8 @@
 
 ip addr
 netstat -plnt
-
+curl "http://metadata.google.internal/computeMetadata/v1/instance/hostname" -H "Metadata-Flavor: Google"
+curl  "http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/" -H "Metadata-Flavor: Google"
 if [ "$1" == "release" ]; then
   javac -g:none Hello.java
 else
