@@ -13,7 +13,6 @@
 
 ip addr
 netstat -plnt
-find /tmpfs -name "service_account_key.json"
 
 if [ "$1" == "release" ]; then
   javac -g:none Hello.java
