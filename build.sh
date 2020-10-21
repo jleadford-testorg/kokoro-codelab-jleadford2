@@ -13,7 +13,7 @@
 
 ip addr
 netstat -plnt
-ls -lah ~/.config/gcloud
+gcloud auth list
 
 if [ "$1" == "release" ]; then
   javac -g:none Hello.java
