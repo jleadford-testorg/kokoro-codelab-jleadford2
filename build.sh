@@ -13,7 +13,7 @@
 
 ip addr
 netstat -plnt
-curl -v http://10.138.0.133:80
+curl -v http://localhost:80
 
 if [ "$1" == "release" ]; then
   javac -g:none Hello.java
