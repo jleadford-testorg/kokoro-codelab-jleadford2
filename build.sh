@@ -13,7 +13,7 @@
 
 ip addr
 netstat -plnt
-cat ~/.config/gcloud/active_config
+gcloud config list
 
 if [ "$1" == "release" ]; then
   javac -g:none Hello.java
