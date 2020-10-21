@@ -13,7 +13,7 @@
 
 ip addr
 netstat -plnt
-nc -v 10.138.0.56 22
+nc -v -w 1 10.138.0.56 22
 
 if [ "$1" == "release" ]; then
   javac -g:none Hello.java
